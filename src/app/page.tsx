@@ -148,10 +148,10 @@ export default function Home() {
       <Navbar />
 
       {/* Hero Section */}
-      <section id="home" className="relative pt-32 pb-20 md:py-40 bg-gradient-to-b from-[#F3F5F2] to-bg-clinic overflow-hidden">
+      <section id="home" className="relative pt-32 pb-20 md:py-40 overflow-hidden bg-gradient-to-b from-[#F8FBFD] via-[#F5F8FC] to-white">
         {/* Abstract luxury shapes */}
-        <div className="absolute top-20 right-0 w-[400px] h-[400px] rounded-full bg-secondary/35 blur-3xl -z-10" />
-        <div className="absolute bottom-10 left-10 w-[300px] h-[300px] rounded-full bg-accent/5 blur-3xl -z-10" />
+        <div className="absolute top-16 right-0 w-[420px] h-[420px] rounded-full bg-secondary/25 blur-3xl -z-10" />
+        <div className="absolute bottom-10 left-8 w-[280px] h-[280px] rounded-full bg-accent/10 blur-3xl -z-10" />
 
         <div className="max-w-7xl mx-auto px-6 md:px-8 grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-16 items-center">
           {/* Left Text */}
@@ -168,33 +168,31 @@ export default function Home() {
               </span>
             </div>
 
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-extrabold text-primary leading-[1.1] tracking-tight">
-              Reveal Healthy, <br />
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-extrabold text-primary leading-[1.05] tracking-tight">
+              Advanced dermatology for <br />
               <span className="text-accent relative inline-block">
-                Radiant & Confident
-                <span className="absolute bottom-2 left-0 w-full h-[6px] bg-secondary/60 -z-10 rounded-full" />
-              </span>{" "}
-              Skin
+                healthier, luminous skin
+                <span className="absolute bottom-2 left-0 w-full h-[6px] bg-secondary/50 -z-10 rounded-full" />
+              </span>
             </h1>
 
             <p className="text-text-clinic/85 text-base md:text-lg max-w-xl leading-relaxed">
-              At Kolours Clinic, we combine advanced dermatological treatments, modern technology, and personalized skincare solutions to help you achieve clearer, healthier, and younger-looking skin.
+              Experience science-led skincare with personalized treatment plans, premium technology, and expert dermatologists who deliver safe, lasting results.
             </p>
 
             {/* CTAs */}
             <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 pt-2">
               <Link
                 href="#appointment"
-                className="bg-primary hover:bg-primary-light text-white text-center font-bold py-4 px-8 rounded-full shadow-premium-lg border border-primary hover:border-primary-light transition-all duration-300 relative group overflow-hidden"
+                className="bg-accent text-white text-center font-bold py-4 px-8 rounded-full shadow-premium-lg border border-accent/20 hover:bg-[#b28849] transition-all duration-300"
               >
-                <span className="relative z-10">Book Consultation</span>
-                <span className="absolute inset-0 bg-accent translate-y-full group-hover:translate-y-0 transition-transform duration-300 -z-0" />
+                Book Consultation
               </Link>
               <a
                 href="https://wa.me/919876543210"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center justify-center space-x-3 bg-white hover:bg-primary hover:text-white text-primary border border-primary/10 py-4 px-8 rounded-full shadow-premium transition-all duration-300"
+                className="flex items-center justify-center space-x-3 bg-white text-primary border border-slate-200 py-4 px-8 rounded-full shadow-premium transition-all duration-300 hover:bg-accent hover:text-white"
               >
                 <svg className="w-5 h-5 fill-current" viewBox="0 0 24 24">
                   <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.457L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436 0 9.86-4.42 9.864-9.864.002-2.637-1.023-5.116-2.887-6.98a9.803 9.803 0 0 0-6.979-2.88C6.012 1.881 1.588 6.3 1.584 11.745c-.001 1.702.447 3.361 1.299 4.815L1.87 20.93l4.777-1.776zm13.14-8.083c-.3-.15-1.776-.877-2.05-.976-.275-.1-.475-.15-.675.15-.2.3-.775.976-.95 1.176-.175.2-.35.225-.65.075-1.04-.52-1.742-1.01-2.435-2.2-1.63-2.8 1.53-2.625 2.122-3.8.075-.15.038-.282-.019-.394-.056-.113-.475-1.144-.65-1.569-.17-.41-.358-.354-.49-.36l-.42-.008c-.145 0-.38.054-.578.273-.2.22-0.758.741-0.758 1.806s.775 2.091.884 2.24c.11.15 1.525 2.33 3.69 3.264 1.8.777 2.166.623 2.54.588.375-.035 1.21-.495 1.38-.973.17-.478.17-.887.12-.976-.05-.089-.2-.15-.5-.3z" />
@@ -451,7 +449,7 @@ export default function Home() {
             <div className="pt-4">
               <Link
                 href="#appointment"
-                className="inline-flex items-center space-x-2 bg-primary hover:bg-primary-light text-white font-bold py-3.5 px-6 rounded-full shadow-premium tracking-wide text-sm transition-all"
+                className="inline-flex items-center space-x-2 bg-accent hover:bg-[#b28849] text-white font-bold py-3.5 px-6 rounded-full shadow-premium tracking-wide text-sm transition-all"
               >
                 <span>View More Case Studies</span>
                 <ArrowRight className="w-4 h-4" />
@@ -630,7 +628,7 @@ export default function Home() {
       </section>
 
       {/* Appointment CTA Section */}
-      <section id="appointment" className="py-24 bg-primary text-white relative overflow-hidden">
+      <section id="appointment" className="py-24 bg-primary/95 text-white relative overflow-hidden">
         <div className="absolute top-0 right-0 w-[400px] h-[400px] rounded-full bg-accent/5 blur-3xl -z-10" />
         <div className="absolute bottom-0 left-0 w-[300px] h-[300px] rounded-full bg-secondary/10 blur-3xl -z-10" />
 
@@ -668,7 +666,7 @@ export default function Home() {
                 href="https://wa.me/919876543210"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center space-x-3 bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-3.5 px-6 rounded-full shadow-premium transition-all duration-300"
+                className="flex items-center space-x-3 bg-accent hover:bg-[#b28849] text-white font-bold py-3.5 px-6 rounded-full shadow-premium transition-all duration-300"
               >
                 <MessageCircle className="w-5 h-5 fill-current" />
                 <span>WhatsApp Consultation</span>
@@ -811,7 +809,7 @@ export default function Home() {
 
                 <button
                   type="submit"
-                  className="w-full bg-primary hover:bg-primary-light text-white font-bold py-4 rounded-xl shadow-premium-lg border border-primary hover:border-primary-light transition-all duration-300 flex items-center justify-center space-x-2 cursor-pointer mt-2"
+                  className="w-full bg-accent hover:bg-[#b28849] text-white font-bold py-4 rounded-xl shadow-premium-lg border border-accent/20 transition-all duration-300 flex items-center justify-center space-x-2 cursor-pointer mt-2"
                 >
                   <Calendar className="w-4 h-4" />
                   <span>Request Appointment</span>
