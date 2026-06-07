@@ -1,26 +1,85 @@
 @import "tailwindcss";
 
+@theme {
+  --color-primary: #1E3A5F;
+  --color-primary-light: #2b507d;
+  --color-primary-dark: #12243d;
+  --color-secondary: #CFEDE4;
+  --color-secondary-dark: #a8dccf;
+  --color-accent: #C7A56A;
+  --color-accent-light: #d6bb8b;
+  --color-bg-clinic: #FAFAF8;
+  --color-text-clinic: #2D3748;
+  --color-card-clinic: #FFFFFF;
+  --color-success-clinic: #6BBF8A;
+  
+  --font-sans: var(--font-plus-jakarta), sans-serif;
+  --font-heading: var(--font-outfit), sans-serif;
+}
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #FAFAF8;
+  --foreground: #2D3748;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--color-bg-clinic);
+  color: var(--color-text-clinic);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  color: var(--color-primary);
+}
+
+/* Glassmorphism utility classes */
+.glass {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.glass-dark {
+  background: rgba(30, 58, 95, 0.8);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Custom shadow */
+.shadow-premium {
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.03);
+}
+
+.shadow-premium-lg {
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
+}
+
+/* Gradient effects */
+.gradient-gold-text {
+  background: linear-gradient(135deg, #C7A56A 0%, #E6C894 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradient-primary-bg {
+  background: linear-gradient(135deg, #1E3A5F 0%, #12243d 100%);
+}
+
+.gradient-soft-bg {
+  background: linear-gradient(180deg, #FAFAF8 0%, #F3F5F2 100%);
 }
