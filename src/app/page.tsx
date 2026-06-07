@@ -153,7 +153,7 @@ export default function Home() {
         <div className="absolute top-20 right-0 w-[400px] h-[400px] rounded-full bg-secondary/35 blur-3xl -z-10" />
         <div className="absolute bottom-10 left-10 w-[300px] h-[300px] rounded-full bg-accent/5 blur-3xl -z-10" />
 
-        <div className="max-w-7xl mx-auto px-6 md:px-8 grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+        <div className="max-w-7xl mx-auto px-6 md:px-8 grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-16 items-center">
           {/* Left Text */}
           <motion.div
             initial="hidden"
@@ -334,7 +334,7 @@ export default function Home() {
             </p>
 
             {/* Mission / Values / Technology Grid */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 pt-6">
               {[
                 { title: "Our Mission", desc: "Delivering world-class aesthetic solutions customized to Indian skin types for safe, visible, and long-term results." },
                 { title: "Core Values", desc: "Unwavering medical ethics, safety-first protocols, complete honesty, and clinical precision." },
@@ -371,7 +371,7 @@ export default function Home() {
           </div>
 
           {/* Services Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 w-full">
             {services.map((service, idx) => (
               <motion.div
                 key={idx}
@@ -476,7 +476,7 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
             {features.map((feat, idx) => (
               <div
                 key={idx}
@@ -533,10 +533,10 @@ export default function Home() {
                 key={idx}
                 whileHover={{ scale: 1.02 }}
                 transition={{ duration: 0.3 }}
-                className="bg-white rounded-3xl overflow-hidden shadow-premium-lg border border-primary/5 flex flex-col md:flex-row"
+                className="bg-white rounded-3xl overflow-hidden shadow-premium-lg border border-primary/5 flex flex-col md:flex-row md:min-h-[320px]"
               >
                 {/* Image */}
-                <div className="relative w-full md:w-2/5 aspect-[4/5] md:aspect-[3/4]">
+                <div className="relative w-full md:w-2/5 aspect-[4/5] md:aspect-auto md:min-h-full">
                   <Image
                     src={doc.image}
                     alt={`Portrait of dermatologist ${doc.name}`}
