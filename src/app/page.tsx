@@ -536,7 +536,7 @@ export default function Home() {
                 className="bg-white rounded-3xl overflow-hidden shadow-premium-lg border border-primary/5 flex flex-col md:flex-row"
               >
                 {/* Image */}
-                <div className="relative w-full md:w-2/5 aspect-[4/5] md:aspect-auto">
+                <div className="relative w-full md:w-2/5 aspect-[4/5] md:aspect-[3/4]">
                   <Image
                     src={doc.image}
                     alt={`Portrait of dermatologist ${doc.name}`}

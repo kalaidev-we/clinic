@@ -59,7 +59,7 @@ export default function BeforeAfterSlider({
   return (
     <div
       ref={containerRef}
-      className="relative w-full aspect-[4/3] rounded-2xl overflow-hidden shadow-premium-lg select-none cursor-ew-resize group border border-white/20"
+      className="relative w-full aspect-[4/3] rounded-2xl overflow-hidden shadow-premium-lg select-none cursor-ew-resize group border border-white/20 touch-none"
       onMouseMove={handleMouseMove}
       onTouchMove={handleTouchMove}
       onMouseDown={() => setIsDragging(true)}
